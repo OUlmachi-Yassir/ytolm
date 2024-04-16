@@ -83,10 +83,11 @@ const CreateItineraryForm = () => {
             if (response.status === 201) {
                 navigate(STUDENT_DASHBOARD_ROUTE)
             }
-            // Handle success response here
+            
         } catch (error) {
+            console.log(error)
             console.error('Failed to create itinerary:', error.message);
-            // Handle error response here
+            
         }
     };
 
